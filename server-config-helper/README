@@ -1,0 +1,33 @@
+### available-port
+~~~sh
+Usage: node available-port
+Options:
+    -addr       address to find not in use port.
+                    ( default to localhost )
+    --range     range where to find available port.
+                    ( --range 3000,3030 )
+~~~
+
+~~~js
+const {scannForAvailablePort} = require('available-port')
+;
+
+scannForAvailablePort( )
+  .then( ports => {
+    console.log('port available :', ports[0]);
+  })
+  .catch( () => {
+  	console.log('No available port to listen from this range' );
+  } )
+;
+~~~
+> With defaults opts
+~~~js
+	let {
+		host = 'localhost',
+		portRange = 0,
+		timeout = 500,
+		stopOnFirstAvailable = true,
+		quantity = 1
+	} = opts;
+~~~
