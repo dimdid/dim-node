@@ -1,0 +1,15 @@
+demo/dist/*
+# IDE
+.idea
+*.iml
+
+# Dependences
+node_modules/
+
+# env dependant
+.env
+*.log
+
+# Tmp & oops
+*~
+*.swp
