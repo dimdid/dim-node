@@ -1,0 +1,13 @@
+{
+  "name": "server-config-helper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Help to configure server side app deploying.",
+  "scripts": {
+    "try": "node ez-ginx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "dim",
+  "license": "ISC"
+}

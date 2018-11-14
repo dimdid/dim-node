@@ -1,13 +1,18 @@
-### available-port
-~~~sh
+# server-config-helper
+Help to configure server side app deploying.
+
+## available-port
+Check for a port where can listen.
+
+~ ~~~sh
 Usage: node available-port
 Options:
     -addr       address to find not in use port.
                     ( default to localhost )
     --range     range where to find available port.
                     ( --range 3000,3030 )
-~~~
-
+~ ~~~
+~~
 ~~~js
 const {scannForAvailablePort} = require('available-port')
 ;

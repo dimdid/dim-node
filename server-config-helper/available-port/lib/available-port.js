@@ -69,7 +69,7 @@ function scannForAvailablePort(opts) {
 			, count = 0
 		;
 		const loop = portToScann => {
-			let isLast = rangeHaveMax && current >= portRange[1] || count + 1 === quantity;
+			let isLast = rangeHaveMax && current >= portRange[1] || count + 1 >= quantity;
 			testPort(portToScann)
 				.then( available => {
 					if (stopOnFirstAvailable) {
