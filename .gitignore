@@ -1,3 +1,6 @@
+test.nginx.conf
+package.json
+
 # IDE
 .idea
 *.iml
